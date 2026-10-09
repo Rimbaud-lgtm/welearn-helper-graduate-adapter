@@ -1,0 +1,13 @@
+{
+  "name": "welearn-helper-graduate-adapter-test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Synthetic DOM test for a WELearnHelper course adapter",
+  "scripts": {
+    "test": "node tests/welearn-ex2-adapter.test.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.3"
+  }
+}
