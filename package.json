@@ -1,10 +1,11 @@
 {
-  "name": "welearn-helper-graduate-adapter-test",
-  "version": "0.1.0",
+  "name": "welearn-helper-graduate-adapter",
+  "version": "0.3.8-preview.1",
   "private": true,
-  "description": "Synthetic DOM test for a WELearnHelper course adapter",
+  "description": "Local Edge extension for verified WeLearn practice workflows",
   "scripts": {
-    "test": "node tests/welearn-ex2-adapter.test.cjs"
+    "build": "node tools/build.cjs",
+    "test": "node tests/welearn-ex2-adapter.test.cjs && node --test tests/product.test.cjs tests/background.test.cjs tests/catalog.test.cjs tests/popup.test.cjs tests/final-workflow.test.cjs"
   },
   "devDependencies": {
     "jsdom": "^26.1.0",

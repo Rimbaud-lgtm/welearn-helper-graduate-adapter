@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WeLearn 设置</title><link rel="stylesheet" href="ui.css"></head>
+<body class="settings-page"><header><img src="icons/48.png" alt="" width="32" height="32"><strong>WeLearn 设置</strong><span id="version"></span></header>
+<main><form id="settingsForm">
+  <fieldset><legend>练习设置</legend>
+    <label><input id="batch" type="checkbox">批量处理已确认未完成的练习</label>
+    <label>每批上限 <input id="batchSize" type="number" min="1" max="10" value="1"></label>
+    <label><input id="replaceDrafts" type="checkbox">允许替换未提交的草稿答案</label>
+    <label><input id="skipUnsupported" type="checkbox" checked>不支持的题型保留待人工处理</label>
+    <label>每项核验间隔 <input id="delayMs" type="number" min="200" max="3000" step="50" value="450">毫秒</label>
+  </fieldset>
+  <div class="commands"><button class="primary" type="submit">保存设置</button></div>
+  <p id="saved" role="status"></p>
+</form>
+<fieldset><legend>提交授权</legend>
+  <p id="authorizationStatus" class="muted">首次独立验收仅授权 1 项</p>
+  <div id="exerciseScopes"></div>
+  <button id="selectUnfinished" disabled>选择全部未完成练习</button>
+  <label>授权提交上限 <input id="limit" type="number" min="1" max="225" value="1"></label>
+  <div class="commands"><button id="authorize" disabled>授权所选练习</button><button id="revoke">撤销授权</button></div>
+  <p id="pilotScope" class="muted"></p>
+  <label><input id="pilotReplace" type="checkbox">本次验证允许替换当前练习的未提交草稿</label>
+  <button id="authorizePilot" disabled>授权本题提交 1 次判分验证</button>
+</fieldset>
+<p id="error" class="error" role="alert" hidden></p>
+<details open><summary>课程连接</summary><p id="connectionStatus" class="context"></p></details>
+<fieldset><legend>版本更新</legend><button id="applyUpdate">应用已安装的更新</button></fieldset>
+</main><script src="options.js"></script></body></html>
