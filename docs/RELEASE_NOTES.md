@@ -1,27 +1,37 @@
-# 0.3.8-preview.1
+# 0.3.9-preview.3
 
-This is a prerelease for course 2850, not a verified unattended all-course release.
+适配课程2850的公开预览版，使用 [安装文档](INSTALL.md)。当前尚未达到全题型、无人值守稳定版验收。
 
-## Included
+## 相对0.3.8的变化
 
-- Installable Manifest V3 Edge extension and local settings.
-- Native directory scanning, completion deduplication and authorized queues.
-- Choice, text and reference input with exact readback before native submission.
-- Scoped consent, account binding, quotas and persisted one-use submission receipts.
-- Native grading and directory reconciliation; saved-time-only results remain ungraded.
-- Pause, resume, stop, pending reasons and local audit export.
-- Loaded content-only pages wait ten seconds before normal navigation.
-- Long text retains uniqueness checks; the identified introduction task can use its explicit course sample without explanatory notes.
-- UI launch waits for background acknowledgement before closing its popup.
+- Edge原生常驻侧栏，启动后不自动关闭；显示阶段、真实目录进度、当前批次、授权余额、结果和待人工原因。
+- 每批最多10项，可在原累计授权额度内自动接续，不自动扩大范围或重置已用次数。
+- 处理旧导航事件晚到造成的新课件连接失效；已识别的不支持录音页可在无提交的前提下正常返回目录。
+- 无可靠候选、只读输入和无法核验的项目保留待办；不猜测提交。
+- preview.3在填写前拦截重复题目标识，并在顶层重新扫描时重新声明连接。
+- 完整中文使用文档、可构建安装ZIP、39份经所有者授权公开的历史执行日志及哈希索引。
 
-## Verification Boundaries
+## 本次验证
 
-Real Edge workflows have verified supported input, normal submission, results and consecutive navigation. Development tooling was used for configuration, upgrades and diagnosis, not for entering answers or clicking native Submit in those extension acceptance runs.
+- 第一阶段6项定向后台测试通过：旧目录事件、真实登录/异常返回、录音恢复、未知提交、未知状态、累计批次额度。
+- 第二阶段4项定向测试通过：重复标识在恢复与进入时均不写入/提交、顶层重新连接、未知提交/状态门禁。
+- 构建、发布ZIP内容检查与SHA-256校验在发布时执行；没有以重复全量旧测试冒充真机覆盖。
+- preview.2真实运行已验证自动接续多个10项批次、输入回读、原生单次提交、系统分数/时间与目录对账。日志中同时保留了失败和用户恢复记录。
+- preview.3两项新增修补尚未在当前真实浏览器独立安装验收；定向测试通过不代表真机通过。
 
-Cold restart with Codex closed, real offline/crash recovery, recording tasks and complete coverage of all units are still unverified. Existing grades must not be reset or resubmitted. A transport acknowledgement or successful input is not a completed exercise.
+## 已知限制
 
-## Install and Upgrade
+- 慢导航约45秒超时可能暂停；超时后的延迟目录事件及终态页面变化仍可能显示SESSION_ENDED。历史运行曾先记录NO_AUTHORIZED_UNFINISHED，随后显示会话错误；应以真实目录及逐项结果对账。
+- 录音/作品、只读控件、候选不唯一或草稿冲突等仍需人工；不承诺全225项支持。
+- 关闭Codex再重启Edge的独立冷启动验收、真实断网/崩溃恢复仍UNVERIFIED。
+- 未知提交不允许重试；已完成记录不重置。运行时须保持目标课程标签和Edge前台。
 
-Use the preview ZIP and follow [INSTALL.md](INSTALL.md). Preserve the installation folder and reload the existing extension instead of uninstalling it, so local settings and receipts remain available.
+## 日志与许可
 
-The repository and package contain no cookies, credentials, personal execution records, screenshots or copied course answers. No progress/grade API spoofing is used.
+[39份执行日志](runtime-logs/README.md)由数据所有者明确授权公开，包含进度、成绩和时间；不含账号原文、Cookie、密码、令牌或答案正文。它们不打包进安装ZIP，也不是可恢复的授权备份。
+
+沿用GPL-3.0及上游WELearnHelper来源。源码构建与本次发布资产对应；这次公开发布不改变运行中的学习记录。
+
+---
+
+历史0.3.8版本提供原生目录队列、范围授权、逐字符核验、原生提交/结果对账及启动确认。常驻侧栏和自动接续在0.3.9系列加入。

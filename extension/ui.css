@@ -3,6 +3,12 @@
 body { margin:0; }
 html:has(body.popup) { width:390px; min-width:390px; }
 body.popup { width:390px; }
+.side-panel { width:100%; min-width:0; }
+.side-panel header { position:sticky; top:0; background:#fff; z-index:1; flex-wrap:wrap; }
+.side-panel .commands { flex-wrap:wrap; }
+.side-panel .metrics { grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr); }
+.side-panel .metrics strong { overflow-wrap:anywhere; }
+[hidden] { display:none!important; }
 header { display:flex; align-items:center; gap:9px; padding:14px 16px; border-bottom:1px solid #dce3df; }
 header strong { font-size:16px; }
 header span { font-size:11px; color:#626a65; flex:1; }

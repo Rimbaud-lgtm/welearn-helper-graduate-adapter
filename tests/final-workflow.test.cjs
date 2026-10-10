@@ -21,6 +21,18 @@ test("submit arriving during fill is queued, not refused or executed twice",asyn
     assert.equal(ack.ok,true);assert.equal(submitted,1);assert.equal(messages.filter(m=>m==="WL_CONSUME").length,1);
     box.__weLearnPracticeCleanup();dom.window.close();
 });
+
+test("top scan reannounces its document after worker connection caches are lost",async()=>{
+    const dom=new JSDOM('<body>course</body>',{url:"https://welearn.sflep.com/student/studycourse.aspx?cid=2850"});
+    let listener;const messages=[];
+    const chrome={runtime:{onMessage:{addListener:f=>listener=f,removeListener:()=>{}},sendMessage:async m=>{messages.push(m.kind);return {ok:true,data:{}};}}};
+    const box=vm.createContext({window:dom.window,document:dom.window.document,location:dom.window.location,navigator:dom.window.navigator,chrome,WeLearnCore:C,WeLearnDom:{},MutationObserver:dom.window.MutationObserver,setTimeout,clearTimeout});
+    vm.runInContext(fs.readFileSync(require.resolve("../extension/content.js"),"utf8"),box);
+    await new Promise(resolve=>setImmediate(resolve));messages.length=0;
+    let reply;listener({kind:"WL_SCAN"},{},r=>reply=r);await new Promise(resolve=>setImmediate(resolve));
+    assert.equal(reply.ok,true);assert.deepEqual(messages,["WL_TOP_READY"]);
+    box.__weLearnPracticeCleanup();dom.window.close();
+});
 test("DOM completion waiter is event driven and rejects offline without navigation",async()=>{
     const dom=new JSDOM('<body><p>loading</p></body>');const doc=dom.window.document;
     const result=D.waitFor(doc,()=>doc.querySelector('[data-ready]'),100);

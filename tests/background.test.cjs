@@ -193,3 +193,74 @@ test("UI launch is acknowledged before execution and continues independently of 
     assert.equal((await w.call({kind:"WL_UI_LAUNCH",command:"WL_SETTINGS",tabId:1})).ok,false);
     assert.equal((await w.call({kind:"WL_UI_LAUNCH",command:"WL_START",tabId:1},w.frame)).ok,false);
 });
+test("continuous batches retain cumulative consent and stop exactly at its quota",async()=>{
+    const w=await worker(),url="https://welearn.sflep.com/student/course_info.aspx?cid=2850&classid=fixture";
+    w.setUrl(url);const top={id:w.ui.id,tab:{id:1},frameId:0,documentId:"dir",url};
+    await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    const scope=Object.keys(w.stored().practiceState.catalog)[0],ids=directoryFixture(0).items.slice(0,25).map(r=>r.exerciseId);
+    const consent={scopeKey:scope,identityHash:"b".repeat(64),exerciseIds:ids,limit:25,grantedAt:Date.now()};
+    w.patchState({consent,authorization:{...consent,used:10},settings:{configured:true,batch:true,batchSize:10,continueBatches:true},run:{id:"batch",engine:"extension-directory-v1",scopeKey:scope,tabId:1,status:"returning_skip",done:10,limit:10,batchNo:1,batchStartDone:0,skipped:ids.slice(0,10),lease:{tabId:1}}});
+    await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    assert.equal(w.stored().practiceState.run.limit,20);assert.equal(w.stored().practiceState.run.batchNo,2);
+    assert.equal(w.stored().practiceState.authorization.used,10);assert.equal(w.stored().practiceState.consent.limit,25);
+    assert.equal(w.commands.at(-1).next,ids[10]);
+    const s=w.stored().practiceState;s.run.status="returning_skip";s.run.done=20;s.run.skipped=ids.slice(0,20);s.authorization.used=20;
+    w.patchState({run:s.run,authorization:s.authorization});await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    assert.equal(w.stored().practiceState.run.limit,25);assert.equal(w.stored().practiceState.run.batchNo,3);
+    const f=w.stored().practiceState;f.run.status="returning_skip";f.run.done=25;f.authorization.used=25;
+    w.patchState({run:f.run,authorization:f.authorization});const count=w.commands.length;
+    await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    assert.equal(w.stored().practiceState.run.lastError,"AUTH_QUOTA_EXHAUSTED");assert.equal(w.stored().practiceState.run.status,"paused");assert.equal(w.commands.length,count);
+    assert.deepEqual(w.stored().practiceState.consent.exerciseIds,ids);
+});
+
+test("stale directory navigation cannot end the current study session or clear its target",async()=>{
+    const w=await worker();await fill(w);
+    const run=w.stored().practiceState.run;
+    w.patchState({run:{...run,status:"waiting_navigation",enteredStudy:true}});
+    await w.events.update(1,{url:"https://welearn.sflep.com/student/course_info.aspx?cid=2850&classid=fixture"});await w.flush();
+    const reply=await w.call({kind:"WL_STATE",tabId:1});
+    assert.equal(reply.data.run.status,"waiting_navigation");assert.ok(reply.data.current);
+    assert.equal(w.stored().practiceState.history.some(e=>e.code==="SESSION_ENDED"),false);
+});
+
+test("real login and unexpected directory return still pause a live session",async()=>{
+    for(const url of ["https://welearn.sflep.com/login.aspx","https://welearn.sflep.com/student/course_info.aspx?cid=2850&classid=fixture"]){
+        const w=await worker();await fill(w);
+        w.patchState({run:{...w.stored().practiceState.run,status:"waiting_navigation",enteredStudy:true}});
+        w.setUrl(url);await w.events.update(1,{url});await w.flush();
+        assert.equal(w.stored().practiceState.run.status,"paused");assert.equal(w.stored().practiceState.run.lastError,"SESSION_ENDED");
+    }
+});
+
+test("resume skips a known loaded recording without weakening uncertain-submit protection",async()=>{
+    const {w,scope,top,url}=await lessonConsent(["m-1-1-5","m-1-1-10"]);
+    const ledger=w.stored().practiceState.ledger;Object.assign(ledger[scope+":m-1-1-5"],{status:"skipped",error:"UNSUPPORTED_TYPE",clickCount:0});w.patchState({ledger});
+    await w.call({kind:"WL_OBSERVE",snapshot:{...w.snap,observedStatus:"unknown",questions:[],loaded:true,emptyConfirmed:false}},w.frame);
+    assert.equal((await w.call({kind:"WL_START",tabId:1})).ok,true);
+    assert.equal(w.commands.at(-1).kind,"WL_COURSE_RETURN");
+    assert.deepEqual(w.stored().practiceState.run.skipped,["m-1-1-5"]);
+    w.setUrl(url);await w.events.update(1,{url});await w.flush();
+    assert.equal(w.stored().practiceState.run.status,"returning_skip");
+    await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    assert.equal(w.commands.at(-1).next,"m-1-1-10");
+    assert.equal(w.commands.some(m=>["WL_FILL","WL_SUBMIT"].includes(m.kind)),false);
+    assert.equal(w.stored().practiceState.consent.limit,2);
+});
+
+test("duplicate field IDs become pending before any fill or submission on resume and directory entry",async()=>{
+    const {w,scope,top,url}=await lessonConsent(["m-1-1-5","m-1-1-10"]);
+    const duplicate={...w.snap,loaded:true,questions:[w.snap.questions[0],w.snap.questions[0]]};
+    await w.call({kind:"WL_OBSERVE",snapshot:duplicate},w.frame);
+    assert.equal((await w.call({kind:"WL_START",tabId:1})).ok,true);
+    assert.equal(w.stored().practiceState.ledger[scope+":m-1-1-5"].error,"FIELD_ID_INVALID");
+    assert.equal(w.commands.at(-1).kind,"WL_COURSE_RETURN");
+    w.setUrl(url);await w.call({kind:"WL_DIRECTORY",snapshot:directoryFixture(0)},top);
+    const study="https://welearn.sflep.com/student/StudyCourse.aspx?cid=2850&classid=fixture&sco=m-1-1-10";
+    w.setUrl(study);await w.call({kind:"WL_TOP_READY"},{...top,url:study,documentId:"study10"});
+    await w.call({kind:"WL_OBSERVE",snapshot:{...duplicate,exerciseId:"m-1-1-10"}},{...w.frame,url:w.frame.url.replace("main5.html","main10.html?m-1-1-10"),documentId:"doc10"});
+    assert.equal(w.stored().practiceState.ledger[scope+":m-1-1-10"].error,"FIELD_ID_INVALID");
+    assert.equal(w.commands.at(-1).kind,"WL_COURSE_RETURN");
+    assert.equal(w.commands.some(m=>["WL_FILL","WL_SUBMIT"].includes(m.kind)),false);
+    assert.equal(w.stored().practiceState.authorization.used,0);
+});

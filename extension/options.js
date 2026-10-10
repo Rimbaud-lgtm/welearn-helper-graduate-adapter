@@ -8,7 +8,7 @@ async function send(kind,extra={}) {
 function showError(e){$("error").hidden=false;$("error").textContent=e.message;}
 $("settingsForm").addEventListener("submit",async event=>{
     event.preventDefault();$("error").hidden=true;
-    try{await send("WL_SETTINGS",{settings:{batch:$("batch").checked,batchSize:Number($("batchSize").value),replaceDrafts:$("replaceDrafts").checked,skipUnsupported:$("skipUnsupported").checked,delayMs:Number($("delayMs").value)}});$("saved").textContent="设置已保存在此浏览器";}
+    try{await send("WL_SETTINGS",{settings:{batch:$("batch").checked,batchSize:Number($("batchSize").value),continueBatches:$("continueBatches").checked,replaceDrafts:$("replaceDrafts").checked,skipUnsupported:$("skipUnsupported").checked,delayMs:Number($("delayMs").value)}});$("saved").textContent="设置已保存在此浏览器";}
     catch(e){showError(e);}
 });
 $("revoke").addEventListener("click",async()=>{try{await send("WL_REVOKE");$("authorizationStatus").textContent="授权已撤销";}catch(e){showError(e);}});
@@ -35,6 +35,7 @@ $("authorize").addEventListener("click",async()=>{
         $("connectionStatus").textContent=data.directory?"课程目录："+data.directory.completed+" / "+data.directory.total:data.current ? data.current.title : frames.map(f=>f.host+f.path+(f.pageIds ? " ["+[f.core,f.legacy,f.adapter,f.booted].map(Boolean).join(",")+"] pages="+f.pageIds.join(",") : "")).join("\n") || "课件未连接";
         $("batch").checked=data.settings.batch;$("replaceDrafts").checked=data.settings.replaceDrafts;$("delayMs").value=data.settings.delayMs;
         $("batchSize").value=data.settings.batchSize||1;
+        $("continueBatches").checked=data.settings.continueBatches===true;
         $("skipUnsupported").checked=data.settings.skipUnsupported!==false;
         const validated=data.capabilities.submission.passed&&data.capabilities.resultPersistence.passed&&data.capabilities.navigation.passed;
         const enabled=directoryMode || validated&&data.identityConfirmed;

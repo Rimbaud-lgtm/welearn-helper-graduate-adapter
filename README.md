@@ -1,42 +1,73 @@
-# WELearnHelper Graduate Academic Adapter
+# WeLearn Practice Assistant
 
-An installable Edge extension for course 2850, based on adapter work derived from `SSmJaE/WELearnHelper` v1.1.0 (`3dddb2af63e8004bf60416df3a62b72095206f5d`). Current version: **0.3.8-preview.1**.
+用于 **Microsoft Edge** 的 WeLearn 练习扩展，适配《新时代研究生学术英语：综合教程1》（`cid=2850`，目录225项）。当前版本 **0.3.9-preview.3**，按 GPL-3.0 开源。
 
-## Scope
+从已登录课程读取目录和参考内容，在用户选定的练习范围及提交额度内，完成支持题型的填写、逐字符核验、正常提交、系统成绩回读和目录对账。没有可靠答案的项目保留为待人工处理。
 
-- Reads the native course directory and skips existing completion records.
-- Fills supported choice/text controls and verifies exact input readback.
-- Submits only within explicitly saved exercise scope and quota, through native page controls.
-- Reads native grades or saved-time-only results and reconciles the directory before continuing.
-- Saves settings, task state, submission receipts and pending reasons locally; supports pause/resume/stop.
-- Holds unsupported recording tasks and ambiguous candidates without submitting them.
+**这是预览版，不保证全题型支持或答案正确率。** 连续批次的实际运行证据来自 `preview.2`；`preview.3` 的重复题目标识拦截和连接修补仅通过定向测试，尚未完成独立真机验收。导航超时及会话错误标签仍有已知限制。
 
-## Install and Use
+## 下载与安装
 
-Download the preview ZIP from this repository's Releases, extract it to a permanent location, and load the folder containing `manifest.json` through Edge's developer-mode extension page. See [installation and upgrades](docs/INSTALL.md).
+1. 从 [Releases](https://github.com/Rimbaud-lgtm/welearn-helper-graduate-adapter/releases) 下载 `welearn-edge-0.3.9-preview.3.zip`。GitHub 自动生成的 **Source code** ZIP 不是安装包。
+2. 解压到固定目录，在 Edge 打开 `edge://extensions`，开启“开发人员模式”。
+3. 点击“加载解压缩的扩展”，选择直接包含 `manifest.json` 的目录，固定扩展图标。
+4. 登录目标课程，打开官方目录，点击扩展图标打开常驻侧栏。
+5. 首次在“设置”中只授权 **1项未完成的支持题型，提交上限1**。取得该浏览器自己的真实判分及目录对账证据后再扩大批次。
 
-After configuration and explicit submission authorization, runtime use requires Edge only: no Codex, PowerShell, Python, Node.js, local server or native host. Development scripts are not part of the runtime.
+完整流程见 **[中文使用文档](docs/INSTALL.md)**：首次验证、授权设置、批量接续、暂停恢复、日志与升级。
 
-## Verification Status
+日常运行只需 Edge，**不需要 Codex、PowerShell、Python、Node.js、本地服务或 API Key**。开发工具不参与逐题运行。
 
-Supported practice workflows have real Edge evidence for extension-driven input, native submission, system results and directory reconciliation. This does **not** establish coverage of every course item or guarantee answer accuracy. A completed item with only a saved timestamp is not reported as a percentage grade.
+## 功能与边界
 
-Closing Codex, restarting Edge, and running with one click has **not yet passed independent acceptance**. Real offline/crash recovery and full-course coverage are also unverified. This is a preview, not a stable unattended all-course product. See [product acceptance](docs/PRODUCT_PLAN.md) and [preview notes](docs/RELEASE_NOTES.md).
+- 官方目录识别，跳过已有完成记录；不重复提交、不重置成绩。
+- 部分选择题、填空、参考文本和长文本：可靠候选、填写、精确回读。
+- 使用平台原生 Submit 与确认框；分别展示系统分数和仅保存时间的结果。
+- 常驻侧栏显示阶段、目录进度、批次、授权余额、最近结果及待人工原因。
+- 每批最多10项，可自动接续下一批，累计授权范围与额度保持不变。
+- 确认加载完成且没有练习控件的正文页，停留10秒后正常返回。
+- 本地保存设置、范围授权和一次性提交账本；可导出执行JSON。
 
-No credentials, cookies, personal progress records, screenshots or course answer dumps are included. Runtime reference extraction uses authorized course content; it does not change grades or progress through private APIs.
+| 情况 | 行为 |
+|---|---|
+| 已完成、已提交或提交结果不明 | 不重做、不重放提交 |
+| 录音、作品、不支持的控件 | 保留待人工，按跳过策略继续 |
+| 候选不唯一、只读输入、草稿冲突、重复题目标识 | 不猜测提交，记录原因 |
+| 身份、网络、前台、登录或提交结果无法确认 | 暂停，先检查实际页面与日志 |
+| 只有保存时间 | 显示“仅记录完成”，不当作100% |
 
-## Test
+运行时保持课程标签激活、Edge窗口在前台，只打开一个学习课件。关闭侧栏不等于暂停；请用“暂停”或“停止”。不支持任意课程、录音上传或后台修改成绩。
 
-Requires Node.js 20 or newer.
+## 真实日志与验证范围
+
+经数据所有者明确授权，仓库公开 **39份历史执行JSON**，见 [日志索引与阅读方法](docs/runtime-logs/README.md)。这些日志保留成功和失败，包含授权公开的课程进度、成绩及时间。不要把它们当作题库、可导入备份或其他用户的效果保证。
+
+支持场景已有真实连续批次与系统判分证据；独立冷启动、真实离线/崩溃恢复和全课程题型覆盖仍未完成验收。见 [验证状态](docs/PRODUCT_PLAN.md) 和 [更新说明](docs/RELEASE_NOTES.md)。
+
+## 开发
+
+安装包用户无需运行以下命令。源码构建需要 Node.js 20或更高版本：
 
 ```powershell
-npm install
+npm ci
 npm test
 npm run build
 ```
 
-The build output is `dist/edge`. Tests cover parsing, state, authorization, submission replay protection, directory reconciliation, foreground handling and launch acknowledgement. Tests do not substitute for native system grading.
+构建输出是 `dist/edge`。Windows生成发布ZIP：
 
-## Upstream and License
+```powershell
+pwsh -NoProfile -File tools/package.ps1
+```
 
-The adapter is derived from [WELearnHelper](https://github.com/SSmJaE/WELearnHelper), upstream v1.1.0. This repository is distributed under GPL-3.0; see [LICENSE](LICENSE).
+完整测试命令供开发者使用，本次实际检查范围记录在更新说明中。`src/projects/welearn` 保留上游适配来源；其中 `parser.ts`、`solver.ts` 是上游集成片段，实际扩展入口在 `extension/`，构建仅转译共享 `adapter.ts`。
+
+## 数据与反馈
+
+不请求Cookie权限、不索要密码、不调用第三方答案服务。本地保存课程/账号的散列绑定、授权及任务结果。日志下载不会自动上传；成绩和时间仍是个人学习记录，请检查后再分享。
+
+在 [Issues](https://github.com/Rimbaud-lgtm/welearn-helper-graduate-adapter/issues) 提供版本、题型、错误码及脱敏日志。不要公开密码、Cookie、令牌、班级链接或个人截图。
+
+## 上游与许可
+
+适配工作源自 [SSmJaE/WELearnHelper](https://github.com/SSmJaE/WELearnHelper) v1.1.0，基线 `3dddb2af63e8004bf60416df3a62b72095206f5d`。按 [GPL-3.0](LICENSE) 发布并保留来源。课程内容及商标属于各自权利人，本仓库不附带课件或题库答案；请按课程和平台允许的方式使用。

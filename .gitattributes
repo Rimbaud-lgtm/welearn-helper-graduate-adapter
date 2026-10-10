@@ -1,0 +1,2 @@
+# Preserve authorized audit snapshots byte-for-byte across platforms.
+docs/runtime-logs/welearn-extension-audit-*.json -text

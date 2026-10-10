@@ -1,6 +1,6 @@
 # Synthetic Adapter Test Results
 
-Command: `npm test`
+Historical adapter-only command (before the extension test suite was added). Current npm test runs additional suites; see [release verification](RELEASE_NOTES.md).
 
 Observed result on 2026-10-09:
 

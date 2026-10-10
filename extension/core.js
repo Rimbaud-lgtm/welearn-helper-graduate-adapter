@@ -38,6 +38,8 @@
         DIRECTORY_MISMATCH: "页面结果与课程目录记录不一致，禁止重提",
         ENGINE_TIMEOUT: "页面加载或结果等待超时，任务已暂停",
         AUTH_REQUIRED: "请先设置本课程的提交范围与上限",
+        AUTH_QUOTA_EXHAUSTED: "累计提交授权额度已用完",
+        NO_AUTHORIZED_UNFINISHED: "授权范围内没有可自动处理的未完成练习",
         NO_EXERCISE: "页面已加载，无练习，已停留10秒后跳过",
         EMPTY_REVOKED: "倒计时期间练习结构变化，已停止空章节跳过",
     };
@@ -77,12 +79,13 @@
         const batchSize=input.batchSize===undefined?1:Number(input.batchSize);
         if(!Number.isInteger(batchSize)||batchSize<1||batchSize>10)fail("UNAUTHORIZED");
         return { configured: true, replaceDrafts: input.replaceDrafts === true, batch: input.batch === true, delayMs: input.delayMs,batchSize,
-            skipUnsupported: input.skipUnsupported !== false };
+            skipUnsupported: input.skipUnsupported !== false,continueBatches:input.continueBatches===true };
     }
     function fillAllowed(snapshot, evidence, calibration, config) {
         if (snapshot.observedStatus === "completed") fail("COMPLETED");
         if (snapshot.observedStatus !== "unsubmitted") fail("UNKNOWN_STATUS");
         if (!snapshot.questions.length) fail("UNSUPPORTED_TYPE");
+        if (new Set(snapshot.questions.map(q=>q.id)).size!==snapshot.questions.length) fail("FIELD_ID_INVALID");
         for (const q of snapshot.questions) {
             if (!SAFE_TYPES.has(q.type)) fail("UNSUPPORTED_TYPE");
             if (!q.hasCandidate) fail("NO_CANDIDATE");

@@ -1,6 +1,6 @@
 {
   "name": "welearn-helper-graduate-adapter",
-  "version": "0.3.8-preview.1",
+  "version": "0.3.9-preview.3",
   "private": true,
   "description": "Local Edge extension for verified WeLearn practice workflows",
   "scripts": {

@@ -1,0 +1,1934 @@
+{
+  "version": "0.3.9-preview.2",
+  "exportedAt": 1791634770762,
+  "browserStartupAt": null,
+  "courseId": 2850,
+  "capabilities": {
+    "version": "0.3.9-preview.2",
+    "navigation": {
+      "at": 1791622899506,
+      "exerciseId": "m-1-1-8",
+      "passed": true,
+      "source": "extension-directory-entry-and-return"
+    },
+    "submission": {
+      "at": 1791622899506,
+      "exerciseId": "m-1-1-8",
+      "passed": true,
+      "source": "extension-native-submit"
+    },
+    "resultPersistence": {
+      "at": 1791622899506,
+      "exerciseId": "m-1-1-8",
+      "passed": true,
+      "source": "native-grade-and-course-directory"
+    }
+  },
+  "evidence": {
+    "text": {
+      "at": 1791627300376,
+      "count": 7,
+      "exerciseId": "m-1-2-1",
+      "passed": true,
+      "source": "live-readback"
+    },
+    "choice": {
+      "at": 1791622894186,
+      "count": 8,
+      "exerciseId": "m-1-1-8",
+      "passed": true,
+      "source": "extension-live-readback"
+    },
+    "reference": {
+      "at": 1791622894186,
+      "count": 8,
+      "exerciseId": "m-1-1-8",
+      "passed": true,
+      "source": "extension-live-readback"
+    }
+  },
+  "progress": {
+    "completed": 46,
+    "total": 225,
+    "at": 1791634624879
+  },
+  "settings": {
+    "batch": true,
+    "batchSize": 10,
+    "configured": true,
+    "continueBatches": true,
+    "delayMs": 450,
+    "replaceDrafts": false,
+    "skipUnsupported": true
+  },
+  "connection": {
+    "currentLinked": true,
+    "directoryLinked": false,
+    "diagnostic": {
+      "code": "CONTENT_NOT_LOADED",
+      "stage": "launch"
+    }
+  },
+  "current": {
+    "exerciseId": "m-1-2-21",
+    "observedStatus": "unsubmitted",
+    "loaded": true,
+    "emptyConfirmed": false,
+    "questions": [
+      {
+        "id": "u2_21_tf1",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": true
+      },
+      {
+        "id": "u2_21_f1",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf2",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f2",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf3",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f3",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf4",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f1",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf5",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f5",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf6",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f6",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf7",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f7",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf8",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f8",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf9",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f9",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_tf10",
+        "type": "choice",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      },
+      {
+        "id": "u2_21_f10",
+        "type": "reference",
+        "hasCandidate": true,
+        "conflict": false,
+        "matched": false
+      }
+    ]
+  },
+  "consent": {
+    "exerciseIds": [
+      "m-1-1-7",
+      "m-1-1-23",
+      "m-1-2-2",
+      "m-1-2-3",
+      "m-1-2-5",
+      "m-1-2-6",
+      "m-1-2-7",
+      "m-1-2-8",
+      "m-1-2-11",
+      "m-1-2-12",
+      "m-1-2-13",
+      "m-1-2-14",
+      "m-1-2-15",
+      "m-1-2-16",
+      "m-1-2-17",
+      "m-1-2-18",
+      "m-1-2-19",
+      "m-1-2-20",
+      "m-1-2-21",
+      "m-1-2-22",
+      "m-1-2-23",
+      "m-1-2-24",
+      "m-1-2-25",
+      "m-1-2-26",
+      "m-1-2-27",
+      "m-1-2-28",
+      "m-1-2-29",
+      "m-1-2-30",
+      "m-1-3-1",
+      "m-1-3-2",
+      "m-1-3-3",
+      "m-1-3-4",
+      "m-1-3-5",
+      "m-1-3-6",
+      "m-1-3-7",
+      "m-1-3-8",
+      "m-1-3-11",
+      "m-1-3-12",
+      "m-1-3-13",
+      "m-1-3-14",
+      "m-1-3-15",
+      "m-1-3-16",
+      "m-1-3-17",
+      "m-1-3-18",
+      "m-1-3-19",
+      "m-1-3-20",
+      "m-1-3-21",
+      "m-1-3-22",
+      "m-1-3-23",
+      "m-1-3-24",
+      "m-1-3-25",
+      "m-1-3-26",
+      "m-1-3-27",
+      "m-1-3-28",
+      "m-1-4-1",
+      "m-1-4-2",
+      "m-1-4-3",
+      "m-1-4-4",
+      "m-1-4-5",
+      "m-1-4-6",
+      "m-1-4-7",
+      "m-1-4-8",
+      "m-1-4-11",
+      "m-1-4-12",
+      "m-1-4-13",
+      "m-1-4-14",
+      "m-1-4-15",
+      "m-1-4-16",
+      "m-1-4-17",
+      "m-1-4-18",
+      "m-1-4-19",
+      "m-1-4-20",
+      "m-1-4-21",
+      "m-1-4-22",
+      "m-1-4-23",
+      "m-1-4-24",
+      "m-1-4-25",
+      "m-1-4-26",
+      "m-1-4-27",
+      "m-1-4-28",
+      "m-1-5-1",
+      "m-1-5-2",
+      "m-1-5-3",
+      "m-1-5-4",
+      "m-1-5-5",
+      "m-1-5-6",
+      "m-1-5-7",
+      "m-1-5-8",
+      "m-1-5-9",
+      "m-1-5-10",
+      "m-1-5-11",
+      "m-1-5-12",
+      "m-1-5-13",
+      "m-1-5-14",
+      "m-1-5-15",
+      "m-1-5-16",
+      "m-1-5-17",
+      "m-1-5-18",
+      "m-1-5-19",
+      "m-1-5-20",
+      "m-1-5-21",
+      "m-1-5-22",
+      "m-1-5-23",
+      "m-1-5-24",
+      "m-1-5-25",
+      "m-1-5-26",
+      "m-1-5-27",
+      "m-1-5-28",
+      "m-1-6-1",
+      "m-1-6-2",
+      "m-1-6-3",
+      "m-1-6-4",
+      "m-1-6-5",
+      "m-1-6-6",
+      "m-1-6-7",
+      "m-1-6-8",
+      "m-1-6-9",
+      "m-1-6-10",
+      "m-1-6-11",
+      "m-1-6-12",
+      "m-1-6-13",
+      "m-1-6-14",
+      "m-1-6-15",
+      "m-1-6-16",
+      "m-1-6-17",
+      "m-1-6-18",
+      "m-1-6-19",
+      "m-1-6-20",
+      "m-1-6-21",
+      "m-1-6-22",
+      "m-1-6-23",
+      "m-1-6-24",
+      "m-1-6-25",
+      "m-1-6-26",
+      "m-1-6-27",
+      "m-1-6-28",
+      "m-1-7-1",
+      "m-1-7-2",
+      "m-1-7-3",
+      "m-1-7-4",
+      "m-1-7-5",
+      "m-1-7-6",
+      "m-1-7-7",
+      "m-1-7-8",
+      "m-1-7-9",
+      "m-1-7-10",
+      "m-1-7-11",
+      "m-1-7-12",
+      "m-1-7-13",
+      "m-1-7-14",
+      "m-1-7-15",
+      "m-1-7-16",
+      "m-1-7-17",
+      "m-1-7-18",
+      "m-1-7-19",
+      "m-1-7-20",
+      "m-1-7-21",
+      "m-1-7-22",
+      "m-1-7-23",
+      "m-1-7-24",
+      "m-1-7-25",
+      "m-1-7-26",
+      "m-1-7-27",
+      "m-1-7-28",
+      "m-1-8-1",
+      "m-1-8-2",
+      "m-1-8-3",
+      "m-1-8-4",
+      "m-1-8-5",
+      "m-1-8-6",
+      "m-1-8-7",
+      "m-1-8-8",
+      "m-1-8-9",
+      "m-1-8-10",
+      "m-1-8-11",
+      "m-1-8-12",
+      "m-1-8-13",
+      "m-1-8-14",
+      "m-1-8-15",
+      "m-1-8-16",
+      "m-1-8-17",
+      "m-1-8-18",
+      "m-1-8-19",
+      "m-1-8-20",
+      "m-1-8-21",
+      "m-1-8-22",
+      "m-1-8-23",
+      "m-1-8-24",
+      "m-1-8-25",
+      "m-1-8-26",
+      "m-1-8-27"
+    ],
+    "limit": 191,
+    "trial": false,
+    "used": 8
+  },
+  "run": {
+    "id": "765357e4-749b-468f-9e2b-40038c587fd4",
+    "status": "paused",
+    "engine": "extension-directory-v1",
+    "done": 0,
+    "batchNo": 1,
+    "batchStartDone": 0,
+    "initialProgress": 46,
+    "stage": "filling",
+    "startedAt": 1791634619147,
+    "skipped": [
+      "m-1-1-7",
+      "m-1-1-23",
+      "m-1-2-2",
+      "m-1-2-3",
+      "m-1-2-7",
+      "m-1-2-13",
+      "m-1-2-14",
+      "m-1-2-16",
+      "m-1-2-19",
+      "m-1-2-20"
+    ],
+    "lastError": null,
+    "focus": null
+  },
+  "rows": [
+    {
+      "exerciseId": "m-1-1-10",
+      "title": "Reading Text One>Language Enhancement>Ex. 2",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 0,
+      "total": 6,
+      "clickCount": 0,
+      "result": {
+        "accuracy": 100,
+        "correct": 6,
+        "source": "welearn-dom",
+        "total": 6
+      }
+    },
+    {
+      "exerciseId": "m-1-1-11",
+      "title": "Reading Text One>Language Enhancement>Ex. 3",
+      "status": "uncertain",
+      "error": "UNCERTAIN_SUBMIT",
+      "matched": 0,
+      "total": 9,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-12",
+      "title": "Reading Text One>Language Enhancement>Ex. 4",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 5,
+      "total": 5,
+      "clickCount": 0,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 14:29:12",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "engine": "edge-extension",
+        "startedAt": 1791613550829,
+        "version": "0.3.1-preview.1"
+      }
+    },
+    {
+      "exerciseId": "m-1-1-13",
+      "title": "Reading Text Two>Words & Expressions in Text Two",
+      "status": "discovered",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-14",
+      "title": "Reading Text Two>Text Two",
+      "status": "discovered",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-15",
+      "title": "Reading Text Two>Reading Comprehension>Ex. 1",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 4,
+      "total": 4,
+      "clickCount": 0,
+      "result": {
+        "accuracy": 100,
+        "correct": 4,
+        "source": "welearn-dom",
+        "total": 4
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "engine": "edge-extension",
+        "startedAt": 1791614052211,
+        "verifiedAt": 1791614054203,
+        "version": "0.3.1-preview.1"
+      }
+    },
+    {
+      "exerciseId": "m-1-1-16",
+      "title": "Reading Text Two>Reading Comprehension>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 5,
+      "total": 5,
+      "clickCount": 1,
+      "pilot": true,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 5,
+        "source": "welearn-dom",
+        "total": 5
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791618204763,
+        "engine": "edge-extension",
+        "resultAt": 1791617910235,
+        "startedAt": 1791617719943,
+        "submittedAt": 1791617720196,
+        "verifiedAt": 1791617720188,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791618204763
+    },
+    {
+      "exerciseId": "m-1-1-17",
+      "title": "Reading Text Two>Translation",
+      "status": "completed",
+      "error": null,
+      "matched": 2,
+      "total": 2,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 17:05:16",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791623121928,
+        "engine": "edge-extension",
+        "resultAt": 1791623117298,
+        "startedAt": 1791623115676,
+        "submittedAt": 1791623116393,
+        "verifiedAt": 1791623116362,
+        "version": "0.3.6-preview.1"
+      },
+      "directoryConfirmedAt": 1791623121928
+    },
+    {
+      "exerciseId": "m-1-1-18",
+      "title": "Viewing>Viewing Comprehension",
+      "status": "completed",
+      "error": null,
+      "matched": 7,
+      "total": 7,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 7,
+        "source": "welearn-dom",
+        "total": 7
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791621645985,
+        "engine": "edge-extension",
+        "resultAt": 1791621642102,
+        "startedAt": 1791621640438,
+        "submittedAt": 1791621641236,
+        "verifiedAt": 1791621641226,
+        "version": "0.3.4-preview.1"
+      },
+      "directoryConfirmedAt": 1791621645985
+    },
+    {
+      "exerciseId": "m-1-1-19",
+      "title": "Viewing>Academic Listening Skill",
+      "status": "completed",
+      "error": null,
+      "matched": 10,
+      "total": 10,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 10,
+        "source": "welearn-dom",
+        "total": 10
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791621657709,
+        "engine": "edge-extension",
+        "resultAt": 1791621654099,
+        "startedAt": 1791621652370,
+        "submittedAt": 1791621653316,
+        "verifiedAt": 1791621653307,
+        "version": "0.3.4-preview.1"
+      },
+      "directoryConfirmedAt": 1791621657709
+    },
+    {
+      "exerciseId": "m-1-1-20",
+      "title": "Speaking>Participating in a Group Discussion (I)",
+      "status": "skipped",
+      "error": "UNSUPPORTED_TYPE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-21",
+      "title": "Speaking>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 2,
+      "total": 2,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 16:41:16",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791621681397,
+        "engine": "edge-extension",
+        "resultAt": 1791621677129,
+        "startedAt": 1791621675719,
+        "submittedAt": 1791621676215,
+        "verifiedAt": 1791621676202,
+        "version": "0.3.4-preview.1"
+      },
+      "directoryConfirmedAt": 1791621681397
+    },
+    {
+      "exerciseId": "m-1-1-22",
+      "title": "Speaking>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 2,
+      "total": 2,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 16:41:28",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791621694034,
+        "engine": "edge-extension",
+        "resultAt": 1791621689481,
+        "startedAt": 1791621688154,
+        "submittedAt": 1791621688659,
+        "verifiedAt": 1791621688644,
+        "version": "0.3.4-preview.1"
+      },
+      "directoryConfirmedAt": 1791621694034
+    },
+    {
+      "exerciseId": "m-1-1-23",
+      "title": "Speaking>Ex. 3",
+      "status": "skipped",
+      "error": "UNSUPPORTED_TYPE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-24",
+      "title": "Writing>Writing an Introduction",
+      "status": "skipped",
+      "error": "NO_EXERCISE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0,
+      "emptyEvidence": {
+        "confirmedAt": 1791622430777,
+        "dueAt": 1791622440777,
+        "loaded": true
+      }
+    },
+    {
+      "exerciseId": "m-1-1-25",
+      "title": "Writing>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 2,
+      "total": 2,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 2,
+        "source": "welearn-dom",
+        "total": 2
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791622458942,
+        "engine": "edge-extension",
+        "resultAt": 1791622454971,
+        "startedAt": 1791622453901,
+        "submittedAt": 1791622454314,
+        "verifiedAt": 1791622454304,
+        "version": "0.3.5-preview.1"
+      },
+      "directoryConfirmedAt": 1791622458942
+    },
+    {
+      "exerciseId": "m-1-1-26",
+      "title": "Writing>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 2,
+      "total": 2,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 17:05:43",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791623148345,
+        "engine": "edge-extension",
+        "resultAt": 1791623144141,
+        "startedAt": 1791623142615,
+        "submittedAt": 1791623143280,
+        "verifiedAt": 1791623143254,
+        "version": "0.3.6-preview.1"
+      },
+      "directoryConfirmedAt": 1791623148345
+    },
+    {
+      "exerciseId": "m-1-1-27",
+      "title": "Writing>Ex. 3",
+      "status": "completed",
+      "error": null,
+      "matched": 1,
+      "total": 1,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 17:44:33",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-sample-introduction"
+        ],
+        "directoryAt": 1791625495967,
+        "engine": "edge-extension",
+        "resultAt": 1791625473680,
+        "startedAt": 1791625472197,
+        "submittedAt": 1791625472735,
+        "verifiedAt": 1791625472606,
+        "version": "0.3.8-preview.1"
+      },
+      "directoryConfirmedAt": 1791625495967
+    },
+    {
+      "exerciseId": "m-1-1-28",
+      "title": "Micro-Lectures",
+      "status": "completed",
+      "error": null,
+      "matched": 15,
+      "total": 15,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 15,
+        "source": "welearn-dom",
+        "total": 15
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791622757315,
+        "engine": "edge-extension",
+        "resultAt": 1791622752894,
+        "startedAt": 1791622751407,
+        "submittedAt": 1791622752314,
+        "verifiedAt": 1791622752304,
+        "version": "0.3.5-preview.1"
+      },
+      "directoryConfirmedAt": 1791622757315
+    },
+    {
+      "exerciseId": "m-1-1-6",
+      "title": "Reading Text One>Understanding the Text>Ex. 2",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 3,
+      "total": 10,
+      "clickCount": 0,
+      "result": {
+        "accuracy": 100,
+        "correct": 4,
+        "source": "welearn-dom",
+        "total": 4
+      }
+    },
+    {
+      "exerciseId": "m-1-1-7",
+      "title": "Reading Text One>Understanding the Text>Ex. 3",
+      "status": "skipped",
+      "error": "UNSUPPORTED_TYPE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-1-8",
+      "title": "Reading Text One>Academic Reading Skill",
+      "status": "completed",
+      "error": null,
+      "matched": 16,
+      "total": 16,
+      "clickCount": 1,
+      "pilot": true,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 8,
+        "source": "welearn-dom",
+        "total": 8
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791622899506,
+        "engine": "edge-extension",
+        "resultAt": 1791622894829,
+        "startedAt": 1791622893186,
+        "submittedAt": 1791622894197,
+        "verifiedAt": 1791622894186,
+        "version": "0.3.5-preview.1"
+      },
+      "directoryConfirmedAt": 1791622899506
+    },
+    {
+      "exerciseId": "m-1-1-9",
+      "title": "Reading Text One>Language Enhancement>Ex. 1",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 0,
+      "total": 12,
+      "clickCount": 0,
+      "result": {
+        "accuracy": 100,
+        "correct": 12,
+        "source": "welearn-dom",
+        "total": 12
+      }
+    },
+    {
+      "exerciseId": "m-1-2-1",
+      "title": "Lead-in>Pair Work",
+      "status": "existing_completed",
+      "error": null,
+      "matched": 7,
+      "total": 7,
+      "clickCount": 0,
+      "result": {
+        "accuracy": 100,
+        "correct": 7,
+        "source": "welearn-dom",
+        "total": 7
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "engine": "edge-extension",
+        "startedAt": 1791627299991,
+        "version": "0.3.8-preview.1"
+      }
+    },
+    {
+      "exerciseId": "m-1-2-10",
+      "title": "Reading Text One>Language Enhancement>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 19,
+      "total": 19,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 19,
+        "source": "welearn-dom",
+        "total": 19
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791619394744,
+        "engine": "edge-extension",
+        "resultAt": 1791619390544,
+        "startedAt": 1791619388317,
+        "submittedAt": 1791619389730,
+        "verifiedAt": 1791619389722,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791619394744
+    },
+    {
+      "exerciseId": "m-1-2-11",
+      "title": "Reading Text One>Language Enhancement>Ex. 3",
+      "status": "completed",
+      "error": null,
+      "matched": 11,
+      "total": 11,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 20:05:00",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633905795,
+        "engine": "edge-extension",
+        "resultAt": 1791633901596,
+        "startedAt": 1791633899018,
+        "submittedAt": 1791633900339,
+        "verifiedAt": 1791633900323,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633905795
+    },
+    {
+      "exerciseId": "m-1-2-12",
+      "title": "Reading Text One>Language Enhancement>Ex. 4",
+      "status": "completed",
+      "error": null,
+      "matched": 6,
+      "total": 6,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 20:05:14",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633919404,
+        "engine": "edge-extension",
+        "resultAt": 1791633914990,
+        "startedAt": 1791633913623,
+        "submittedAt": 1791633914132,
+        "verifiedAt": 1791633914113,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633919404
+    },
+    {
+      "exerciseId": "m-1-2-13",
+      "title": "Reading Text Two>Words & Expressions in Text Two",
+      "status": "skipped",
+      "error": "NO_EXERCISE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0,
+      "emptyEvidence": {
+        "confirmedAt": 1791633928616,
+        "dueAt": 1791633938616,
+        "loaded": true
+      }
+    },
+    {
+      "exerciseId": "m-1-2-14",
+      "title": "Reading Text Two>Text Two",
+      "status": "skipped",
+      "error": "NO_EXERCISE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0,
+      "emptyEvidence": {
+        "confirmedAt": 1791633950353,
+        "dueAt": 1791633960353,
+        "loaded": true
+      }
+    },
+    {
+      "exerciseId": "m-1-2-15",
+      "title": "Reading Text Two>Reading Comprehension>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 9,
+      "total": 9,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 9,
+        "source": "welearn-dom",
+        "total": 9
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633977764,
+        "engine": "edge-extension",
+        "resultAt": 1791633973377,
+        "startedAt": 1791633971421,
+        "submittedAt": 1791633972609,
+        "verifiedAt": 1791633972591,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633977764
+    },
+    {
+      "exerciseId": "m-1-2-16",
+      "title": "Reading Text Two>Reading Comprehension>Ex. 2",
+      "status": "pending",
+      "error": "READ_ONLY_FIELD",
+      "matched": 0,
+      "total": 10,
+      "clickCount": 0,
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "engine": "edge-extension",
+        "startedAt": 1791633985339,
+        "version": "0.3.9-preview.2"
+      }
+    },
+    {
+      "exerciseId": "m-1-2-17",
+      "title": "Reading Text Two>Translation",
+      "status": "completed",
+      "error": null,
+      "matched": 3,
+      "total": 3,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 20:15:46",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791634551983,
+        "engine": "edge-extension",
+        "resultAt": 1791634547140,
+        "startedAt": 1791634546108,
+        "submittedAt": 1791634546356,
+        "verifiedAt": 1791634546338,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791634551983
+    },
+    {
+      "exerciseId": "m-1-2-18",
+      "title": "Viewing>Viewing Comprehension",
+      "status": "completed",
+      "error": null,
+      "matched": 7,
+      "total": 7,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 7,
+        "source": "welearn-dom",
+        "total": 7
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791634566970,
+        "engine": "edge-extension",
+        "resultAt": 1791634562190,
+        "startedAt": 1791634559636,
+        "submittedAt": 1791634560741,
+        "verifiedAt": 1791634560723,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791634566970
+    },
+    {
+      "exerciseId": "m-1-2-19",
+      "title": "Viewing>Academic Listening Skill",
+      "status": "pending",
+      "error": "READ_ONLY_FIELD",
+      "matched": 0,
+      "total": 9,
+      "clickCount": 0,
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "engine": "edge-extension",
+        "startedAt": 1791634573544,
+        "version": "0.3.9-preview.2"
+      }
+    },
+    {
+      "exerciseId": "m-1-2-2",
+      "title": "Lead-in>Warm-up Video",
+      "status": "pending",
+      "error": "NO_CANDIDATE",
+      "matched": 0,
+      "total": 11,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-2-20",
+      "title": "Speaking>Participating in a Group Discussion (II)",
+      "status": "skipped",
+      "error": "UNSUPPORTED_TYPE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-2-21",
+      "title": "Speaking>Ex. 1",
+      "status": "paused",
+      "error": "PAGE_CHANGED",
+      "matched": 1,
+      "total": 20,
+      "clickCount": 0,
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "engine": "edge-extension",
+        "startedAt": 1791634632601,
+        "version": "0.3.9-preview.2"
+      }
+    },
+    {
+      "exerciseId": "m-1-2-3",
+      "title": "Reading Text One>Words & Expressions in Text One",
+      "status": "skipped",
+      "error": "NO_EXERCISE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0,
+      "emptyEvidence": {
+        "confirmedAt": 1791633823694,
+        "dueAt": 1791633833694,
+        "loaded": true
+      }
+    },
+    {
+      "exerciseId": "m-1-2-4",
+      "title": "Reading Text One>Text One",
+      "status": "skipped",
+      "error": "NO_EXERCISE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0,
+      "emptyEvidence": {
+        "confirmedAt": 1791619583426,
+        "dueAt": 1791619593426,
+        "loaded": true
+      }
+    },
+    {
+      "exerciseId": "m-1-2-5",
+      "title": "Reading Text One>Understanding the Text>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 6,
+      "total": 6,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": null,
+        "correct": null,
+        "kind": "ungraded",
+        "source": "welearn-dom",
+        "timestamp": "2026-10-10 20:04:06",
+        "total": null
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633851636,
+        "engine": "edge-extension",
+        "resultAt": 1791633847295,
+        "startedAt": 1791633845179,
+        "submittedAt": 1791633846191,
+        "verifiedAt": 1791633846071,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633851636
+    },
+    {
+      "exerciseId": "m-1-2-6",
+      "title": "Reading Text One>Understanding the Text>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 12,
+      "total": 12,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 4,
+        "source": "welearn-dom",
+        "total": 4
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633864395,
+        "engine": "edge-extension",
+        "resultAt": 1791633860384,
+        "startedAt": 1791633858038,
+        "submittedAt": 1791633859289,
+        "verifiedAt": 1791633859273,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633864395
+    },
+    {
+      "exerciseId": "m-1-2-7",
+      "title": "Reading Text One>Understanding the Text>Ex. 3",
+      "status": "skipped",
+      "error": "UNSUPPORTED_TYPE",
+      "matched": 0,
+      "total": 0,
+      "clickCount": 0
+    },
+    {
+      "exerciseId": "m-1-2-8",
+      "title": "Reading Text One>Academic Reading Skill",
+      "status": "completed",
+      "error": null,
+      "matched": 8,
+      "total": 8,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 8,
+        "source": "welearn-dom",
+        "total": 8
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "candidateSources": [
+          "course-data-solution"
+        ],
+        "directoryAt": 1791633892403,
+        "engine": "edge-extension",
+        "resultAt": 1791633887228,
+        "startedAt": 1791633884982,
+        "submittedAt": 1791633886241,
+        "verifiedAt": 1791633886225,
+        "version": "0.3.9-preview.2"
+      },
+      "directoryConfirmedAt": 1791633892403
+    },
+    {
+      "exerciseId": "m-1-2-9",
+      "title": "Reading Text One>Language Enhancement>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 15,
+      "total": 15,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 15,
+        "source": "welearn-dom",
+        "total": 15
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791619381900,
+        "engine": "edge-extension",
+        "resultAt": 1791619377628,
+        "startedAt": 1791619375773,
+        "submittedAt": 1791619377009,
+        "verifiedAt": 1791619377002,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791619381900
+    },
+    {
+      "exerciseId": "m-1-3-10",
+      "title": "Reading Text One>Language Enhancement>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 8,
+      "total": 8,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 8,
+        "source": "welearn-dom",
+        "total": 8
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791619626514,
+        "engine": "edge-extension",
+        "resultAt": 1791619620955,
+        "startedAt": 1791619618895,
+        "submittedAt": 1791619620131,
+        "verifiedAt": 1791619620121,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791619626514
+    },
+    {
+      "exerciseId": "m-1-3-9",
+      "title": "Reading Text One>Language Enhancement>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 21,
+      "total": 21,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 21,
+        "source": "welearn-dom",
+        "total": 21
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791619612303,
+        "engine": "edge-extension",
+        "resultAt": 1791619608132,
+        "startedAt": 1791619605819,
+        "submittedAt": 1791619607310,
+        "verifiedAt": 1791619607302,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791619612303
+    },
+    {
+      "exerciseId": "m-1-4-10",
+      "title": "Reading Text One>Language Enhancement>Ex. 2",
+      "status": "completed",
+      "error": null,
+      "matched": 9,
+      "total": 9,
+      "clickCount": 1,
+      "pilot": true,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 9,
+        "source": "welearn-dom",
+        "total": 9
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791620925965,
+        "engine": "edge-extension",
+        "resultAt": 1791620921430,
+        "startedAt": 1791620919981,
+        "submittedAt": 1791620920670,
+        "verifiedAt": 1791620920662,
+        "version": "0.3.3-preview.1"
+      },
+      "directoryConfirmedAt": 1791620925965
+    },
+    {
+      "exerciseId": "m-1-4-9",
+      "title": "Reading Text One>Language Enhancement>Ex. 1",
+      "status": "completed",
+      "error": null,
+      "matched": 13,
+      "total": 13,
+      "clickCount": 1,
+      "pilot": false,
+      "nativeConfirmed": true,
+      "nativeSubmitFinished": true,
+      "result": {
+        "accuracy": 100,
+        "correct": 13,
+        "source": "welearn-dom",
+        "total": 13
+      },
+      "execution": {
+        "browserStartupAt": null,
+        "directoryAt": 1791619639993,
+        "engine": "edge-extension",
+        "resultAt": 1791619635101,
+        "startedAt": 1791619633108,
+        "submittedAt": 1791619634330,
+        "verifiedAt": 1791619634321,
+        "version": "0.3.2-preview.1"
+      },
+      "directoryConfirmedAt": 1791619639993
+    }
+  ],
+  "history": [
+    {
+      "at": 1791633886225,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-8"
+    },
+    {
+      "at": 1791633886241,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-8"
+    },
+    {
+      "at": 1791633887228,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-8"
+    },
+    {
+      "at": 1791633892403,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-8"
+    },
+    {
+      "at": 1791633892424,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633899018,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633900323,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633900339,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633901596,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633905795,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-11"
+    },
+    {
+      "at": 1791633905819,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633913623,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633914113,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633914132,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633914990,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633919404,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-12"
+    },
+    {
+      "at": 1791633919429,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-13"
+    },
+    {
+      "at": 1791633928616,
+      "code": "EMPTY_COUNTDOWN_STARTED",
+      "exerciseId": "m-1-2-13"
+    },
+    {
+      "at": 1791633938618,
+      "code": "NO_EXERCISE_SKIPPED",
+      "exerciseId": "m-1-2-13"
+    },
+    {
+      "at": 1791633943171,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-14"
+    },
+    {
+      "at": 1791633950353,
+      "code": "EMPTY_COUNTDOWN_STARTED",
+      "exerciseId": "m-1-2-14"
+    },
+    {
+      "at": 1791633960355,
+      "code": "NO_EXERCISE_SKIPPED",
+      "exerciseId": "m-1-2-14"
+    },
+    {
+      "at": 1791633964766,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633971421,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633972591,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633972609,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633973377,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633977764,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-15"
+    },
+    {
+      "at": 1791633977785,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-16"
+    },
+    {
+      "at": 1791633985339,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-16"
+    },
+    {
+      "at": 1791633985552,
+      "code": "INPUT_PENDING_SKIPPED",
+      "exerciseId": "m-1-2-16"
+    },
+    {
+      "at": 1791633989780,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634034794,
+      "code": "ENGINE_TIMEOUT",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634535350,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634535371,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634546108,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634546338,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634546356,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634547140,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634551983,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-17"
+    },
+    {
+      "at": 1791634552005,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634559636,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634560723,
+      "code": "SUBMIT_RESERVED",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634560741,
+      "code": "EXTENSION_SUBMIT_CONSUMED",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634562190,
+      "code": "EXTENSION_NATIVE_RESULT",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634566970,
+      "code": "EXTENSION_DIRECTORY_CONFIRMED",
+      "exerciseId": "m-1-2-18"
+    },
+    {
+      "at": 1791634566996,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-19"
+    },
+    {
+      "at": 1791634573544,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-19"
+    },
+    {
+      "at": 1791634573660,
+      "code": "INPUT_PENDING_SKIPPED",
+      "exerciseId": "m-1-2-19"
+    },
+    {
+      "at": 1791634578311,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-20"
+    },
+    {
+      "at": 1791634585863,
+      "code": "UNSUPPORTED_SKIPPED",
+      "exerciseId": "m-1-2-20"
+    },
+    {
+      "at": 1791634591305,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634598172,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634598690,
+      "code": "PAGE_CHANGED",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634619127,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634619147,
+      "code": "EXERCISE_START_RETURN_TO_DIRECTORY",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634624879,
+      "code": "EXTENSION_DIRECTORY_ENTRY",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634632601,
+      "code": "EXTENSION_FILL_STARTED",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634632705,
+      "code": "PAGE_CHANGED",
+      "exerciseId": "m-1-2-21"
+    },
+    {
+      "at": 1791634761295,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634764696,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634765516,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634765926,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766113,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766294,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766460,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766630,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766769,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634766924,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767107,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767266,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767405,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767577,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767743,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634767917,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634768102,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634768659,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634769054,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634769230,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    },
+    {
+      "at": 1791634769405,
+      "code": "UI_LAUNCH_ACCEPTED",
+      "exerciseId": null
+    }
+  ]
+}

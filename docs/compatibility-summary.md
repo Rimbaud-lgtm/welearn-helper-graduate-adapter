@@ -1,4 +1,6 @@
-# Compatibility Summary
+# Historical Compatibility Summary
+
+This is the initial assessment, not the current release status. See [current acceptance](PRODUCT_PLAN.md) and [release notes](RELEASE_NOTES.md).
 
 Assessment date: 2026-10-09. Target: 《新时代研究生学术英语：综合教程1》, official course catalog `cid=2850`.
 

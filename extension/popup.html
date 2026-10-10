@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WeLearn 练习</title><link rel="stylesheet" href="ui.css"></head>
-<body class="popup">
+<body class="side-panel">
   <header><img src="icons/48.png" alt="" width="28" height="28"><strong>WeLearn 练习</strong><span id="version"></span><button id="settings" class="quiet">设置</button></header>
   <main>
     <p id="course" class="context">正在读取课程</p>
     <p id="status" role="status">等待开始</p>
+    <p id="batchStatus" class="context"></p>
     <div class="commands"><button id="start" class="primary">开始练习</button><button id="pause">暂停</button><button id="resume">继续</button><button id="stop">停止</button></div>
     <div class="metrics"><div><span>核验输入</span><strong id="matched">0 / 0</strong></div><div><span>本题系统正确率</span><strong id="accuracy">未判分</strong></div><div><span>回读完成</span><strong id="completed">0</strong></div></div>
     <p id="error" class="error" role="alert" hidden></p>
     <button id="exportAudit" class="quiet">下载执行记录</button>
     <details id="connection" hidden><summary>连接详情</summary><p id="frameInfo" class="context"></p></details>
     <button id="rescan" class="quiet">重新识别</button>
-    <button id="acceptBatch" class="quiet">连续验收 2 项</button>
+    <button id="acceptBatch" class="quiet" hidden>连续验收 2 项</button>
     <h2>当前练习</h2><div class="table-scroll"><table><thead><tr><th>项目</th><th>题型</th><th>状态</th></tr></thead><tbody id="questions"></tbody></table></div>
-    <div class="validation"><button id="calibrate">首次填写验证</button><span id="evidence">待验证</span></div>
+    <div class="validation" hidden><button id="calibrate">首次填写验证</button><span id="evidence">待验证</span></div>
+    <h2>最近完成</h2><div id="recentResults" class="history"></div>
+    <h2>待人工处理</h2><p id="skipCount" class="context"></p><div id="pendingResults" class="history"></div>
     <details><summary>任务记录</summary><div id="results" class="history"></div></details>
   </main>
   <script src="core.js"></script><script src="popup.js"></script>

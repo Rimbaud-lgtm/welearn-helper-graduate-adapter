@@ -39,7 +39,7 @@
                     }catch{return {host:"unknown",path:""};}
                 })});return;
             }
-            if(m.kind==="WL_SCAN"){directoryScan(true);reply({ok:true});return;}
+            if(m.kind==="WL_SCAN"){topReady();directoryScan(true);reply({ok:true});return;}
             if(!["WL_DIRECTORY_ENTER","WL_COURSE_RETURN"].includes(m.kind))return;
             if(session.busy){reply({ok:false});return;}
             session.busy=true;reply({ok:true});
